@@ -47,7 +47,7 @@ class _WelcomeState extends State<Welcome> {
                   ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0, 60, 0, 0),
+                padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
                 child: SizedBox(
                   width: 200,
                   child: TextField(

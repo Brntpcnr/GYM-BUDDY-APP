@@ -74,14 +74,14 @@ class _FirstRouteState extends State<FirstRoute> {
                     decoration: BoxDecoration(
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Chest1.jpg'),
-                            fit: BoxFit.cover),
+                            fit: BoxFit.contain),
                         border: Border.all(color: Colors.blue, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.blue,
                     height: 150,
-                    width: 240,
+                    width: 210,
                     child: Padding(
                       padding: const EdgeInsets.all(50.0),
                       child: Text("CHEST EXERCISES",
@@ -114,14 +114,14 @@ class _FirstRouteState extends State<FirstRoute> {
                     decoration: BoxDecoration(
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Biceps.jpg'),
-                            fit: BoxFit.cover),
+                            fit: BoxFit.contain),
                         border: Border.all(color: Colors.blue, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.blue,
                     height: 150,
-                    width: 240,
+                    width: 210,
                     child: Padding(
                       padding: const EdgeInsets.all(50.0),
                       child: Text("BICEPS EXERCISES",
@@ -154,14 +154,14 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image:
                                 AssetImage('assets/chestimages/Forearms.jpg'),
-                            fit: BoxFit.cover),
+                            fit: BoxFit.contain),
                         border: Border.all(color: Colors.blue, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.blue,
                     height: 150,
-                    width: 240,
+                    width: 210,
                     child: Padding(
                       padding: const EdgeInsets.all(50.0),
                       child: Text("FOREARM EXERCISES",
@@ -193,14 +193,14 @@ class _FirstRouteState extends State<FirstRoute> {
                     decoration: BoxDecoration(
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Triceps.jpg'),
-                            fit: BoxFit.cover),
+                            fit: BoxFit.contain),
                         border: Border.all(color: Colors.blue, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.blue,
                     height: 150,
-                    width: 240,
+                    width: 210,
                     child: Padding(
                       padding: const EdgeInsets.all(50.0),
                       child: Text("TRICEPS EXERCISES",
@@ -234,14 +234,14 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image:
                                 AssetImage('assets/chestimages/Shoulders.jpg'),
-                            fit: BoxFit.cover),
+                            fit: BoxFit.contain),
                         border: Border.all(color: Colors.blue, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.blue,
                     height: 150,
-                    width: 240,
+                    width: 210,
                     child: Padding(
                       padding: const EdgeInsets.all(50.0),
                       child: Text("SHOULDER EXERCISES",
@@ -273,14 +273,14 @@ class _FirstRouteState extends State<FirstRoute> {
                     decoration: BoxDecoration(
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Back.jpg'),
-                            fit: BoxFit.cover),
+                            fit: BoxFit.contain),
                         border: Border.all(color: Colors.blue, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.blue,
                     height: 150,
-                    width: 240,
+                    width: 210,
                     child: Padding(
                       padding: const EdgeInsets.all(50.0),
                       child: Text("BACK EXERCISES",
@@ -312,14 +312,14 @@ class _FirstRouteState extends State<FirstRoute> {
                     decoration: BoxDecoration(
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Abs.jpg'),
-                            fit: BoxFit.cover),
+                            fit: BoxFit.contain),
                         border: Border.all(color: Colors.blue, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.blue,
                     height: 150,
-                    width: 240,
+                    width: 210,
                     child: Padding(
                       padding: const EdgeInsets.all(50.0),
                       child: Text("AB EXERCISES",
@@ -352,14 +352,14 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image:
                                 AssetImage('assets/chestimages/UpperLeg.jpg'),
-                            fit: BoxFit.cover),
+                            fit: BoxFit.contain),
                         border: Border.all(color: Colors.blue, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.blue,
                     height: 150,
-                    width: 240,
+                    width: 210,
                     child: Padding(
                       padding: const EdgeInsets.all(50.0),
                       child: Text("QUADRICEPS EXERCISES",
@@ -390,14 +390,14 @@ class _FirstRouteState extends State<FirstRoute> {
                     decoration: BoxDecoration(
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Glutes.jpg'),
-                            fit: BoxFit.cover),
+                            fit: BoxFit.contain),
                         border: Border.all(color: Colors.blue, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.blue,
                     height: 150,
-                    width: 240,
+                    width: 210,
                     child: Padding(
                       padding: const EdgeInsets.all(50.0),
                       child: Text("GLUTE EXERCISES",
@@ -428,14 +428,14 @@ class _FirstRouteState extends State<FirstRoute> {
                     decoration: BoxDecoration(
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Calves.jpg'),
-                            fit: BoxFit.cover),
+                            fit: BoxFit.contain),
                         border: Border.all(color: Colors.blue, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.blue,
                     height: 150,
-                    width: 240,
+                    width: 210,
                     child: Padding(
                       padding: const EdgeInsets.all(50.0),
                       child: Text("CALF EXERCISES",

@@ -8,7 +8,7 @@ import 'secondd.dart';
 Container ProgressOverlay(String boxtext) {
   return Container(
     height: 50,
-    width: 196,
+    width: 180,
     decoration: BoxDecoration(border: Border.all(), color: Colors.white),
     child: Center(
       child: Text(
@@ -66,14 +66,19 @@ class _ProgressState extends State<Progress> {
                 children: [ProgressOverlay('Weight'), ProgressOverlay('Sets x Reps') ],
               ),
               Row(
-                children: [SizedBox(width: 195,
-                  child: TextField(
+                children: [
+                  SizedBox(
+                    width: 180,
+                    child: TextField(
                     controller: _textController1,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: 'Enter the weight',
                     ),
-                  ),),SizedBox(width: 195,
+                  ),
+                ),
+                  SizedBox(
+                  width: 180,
                   child: TextField(
                     controller: _textController2,
                     decoration: InputDecoration(
@@ -91,7 +96,7 @@ class _ProgressState extends State<Progress> {
                 children: [ProgressOverlay('Date')],
               ),
               Row(
-                children: [SizedBox(width: 195,
+                children: [SizedBox(width: 180,
                   child: TextField(
                     controller: _textController3,
                     decoration: InputDecoration(
@@ -103,7 +108,7 @@ class _ProgressState extends State<Progress> {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0, 300, 0, 0),
+                padding: const EdgeInsets.fromLTRB(0, 250, 0, 0),
                 child: ElevatedButton(
                   child: const Text('Submit'),
                   onPressed: () {

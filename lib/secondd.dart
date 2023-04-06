@@ -32,12 +32,12 @@ class _SecondState extends State<Second> {
           child: Column(
             children: [
               Container(
-                padding: const EdgeInsets.fromLTRB(50, 100.0, 50, 0),
+                padding: const EdgeInsets.fromLTRB(50, 90, 50, 0),
                 child: Text('Welcome ${widget.value} ', style: TextStyle(color: Colors.white, fontSize: 35))
                 ),
               Container(
                   padding: const EdgeInsets.fromLTRB(70, 30.0, 50, 50.0),
-                  child: Text('Please select an option', style: TextStyle(color: Colors.white, fontSize: 30))
+                  child: Text('Please select an option', style: TextStyle(color: Colors.white, fontSize: 28))
               ),
 
               FlatButton(
@@ -57,7 +57,7 @@ class _SecondState extends State<Second> {
                       height: 70,
                       width: 230,
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(50, 30, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(50, 10, 0, 0),
                         child: Text (" 1) Go to exercises", style:TextStyle(color: Colors.white, fontSize: 20)),
                       ),
                     ),
@@ -81,15 +81,12 @@ class _SecondState extends State<Second> {
                       height: 80,
                       width: 290,
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(50, 30, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(50, 10, 0, 0),
                         child: Text (" 2) See previous workouts", style:TextStyle(color: Colors.white, fontSize: 20)),
                       ),
                     ),
                   ],
                 ),
-              ),
-              SizedBox(
-                height: 10,
               ),
               Container(
                 height: 200,
