@@ -36,18 +36,18 @@ class _WelcomeState extends State<Welcome> {
                   child: Text('Welcome to', style: TextStyle(color: Colors.white, fontSize: 20))
               ),
               Container(
-                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 70),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 50),
                   child: Text('GYM BUDDY APP', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40))
               ),
               Container(
-                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 30),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: CircleAvatar(
                       backgroundImage: AssetImage('assets/chestimages/gym.gif'),
-                      radius: 80
+                      radius: 80,
                   ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+                padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
                 child: SizedBox(
                   width: 200,
                   child: TextField(
