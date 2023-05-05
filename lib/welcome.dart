@@ -26,9 +26,10 @@ class _WelcomeState extends State<Welcome> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: true,
-      backgroundColor: Colors.blue,
-      body: Center(
-        child: SingleChildScrollView(
+      backgroundColor: Colors.black,
+      body: Column(
+        children: [
+        Center(
           child: Column(
             children: [
               Container(
@@ -36,14 +37,14 @@ class _WelcomeState extends State<Welcome> {
                   child: Text('Welcome to', style: TextStyle(color: Colors.white, fontSize: 20))
               ),
               Container(
-                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 50),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
                   child: Text('GYM BUDDY APP', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40))
               ),
               Container(
                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: CircleAvatar(
-                      backgroundImage: AssetImage('assets/chestimages/gym.gif'),
-                      radius: 80,
+                      backgroundImage: AssetImage('assets/chestimages/200w.gif'),
+                      radius: 100,
                   ),
               ),
               Padding(
@@ -51,18 +52,34 @@ class _WelcomeState extends State<Welcome> {
                 child: SizedBox(
                   width: 200,
                   child: TextField(
-                    controller: _textController,
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      hintText: 'Please enter your name',
+                    style: TextStyle(
+                      color: Colors.white,
                     ),
-                  ),
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Colors.white.withOpacity(0.1),
+                      hintText: 'Enter text',
+                      hintStyle: TextStyle(
+                        color: Colors.white.withOpacity(0.5),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                  )
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
-                child: ElevatedButton(
-                  child: const Text('Submit'),
+                padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
+                child: RaisedButton(
+                  color: Colors.red,
+                  child: Text('Submit'),
+                  textColor: Colors.white,
                   onPressed: () {
                     setState(() {
                       value = _textController.text;
@@ -79,6 +96,7 @@ class _WelcomeState extends State<Welcome> {
             ],
             ),
         ),
+         ],
       ),
     );
   }

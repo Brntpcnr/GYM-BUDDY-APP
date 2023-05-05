@@ -359,7 +359,7 @@ class _FirstRouteState extends State<FirstRoute> {
                   Container(
                     color: Colors.blue,
                     height: 150,
-                    width: 210,
+                    width: 230,
                     child: Padding(
                       padding: const EdgeInsets.all(50.0),
                       child: Text("QUADRICEPS EXERCISES",

@@ -166,7 +166,7 @@ class _tricepsWorkoutState extends State<tricepsWorkout> {
                           fit: BoxFit.fill,
                           image: AssetImage(
                               'assets/chestimages/tricepsExercise6.jpg')),
-                    ),
+                      borderRadius: BorderRadius.circular(20)),
                   ),
                 ),
                 workoutNames('Cable Overhead Triceps Extension'),

@@ -122,7 +122,7 @@ class _shoulderWorkoutState extends State<shoulderWorkout> {
                           fit: BoxFit.fill,
                           image: AssetImage(
                               'assets/chestimages/shoulderExercise5.jpg')),
-                    ),
+                        borderRadius: BorderRadius.circular(20)),
                   ),
                 ),
                 workoutNames('Barbell Shrug'),
@@ -144,7 +144,7 @@ class _shoulderWorkoutState extends State<shoulderWorkout> {
                           fit: BoxFit.fill,
                           image: AssetImage(
                               'assets/chestimages/shoulderExercise6.jpg')),
-                    ),
+                        borderRadius: BorderRadius.circular(20)),
                   ),
                 ),
                 workoutNames('Behind The Back Barbell Shrug'),
