@@ -17,28 +17,40 @@ class Welcome extends StatefulWidget{
 }
 
 class _WelcomeState extends State<Welcome> {
+  TextEditingController _nameController = TextEditingController();
 
-  final _textController = TextEditingController();
+  @override
+  void dispose() {
+    _nameController.dispose();
+    super.dispose();
+  }
 
-  String value = '' ;
+  void navigateToSecond() {
+    String name = _nameController.text;
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => Second(name: name),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: true,
       backgroundColor: Colors.black,
-      body: Column(
-        children: [
-        Center(
+      body: SingleChildScrollView(
+        child: Center(
           child: Column(
             children: [
               Container(
-                  padding: const EdgeInsets.fromLTRB(120, 60.0, 120.0, 50.0),
+                  padding: const EdgeInsets.fromLTRB(120, 80, 120.0, 50.0),
                   child: Text('Welcome to', style: TextStyle(color: Colors.white, fontSize: 20))
               ),
               Container(
                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
-                  child: Text('GYM BUDDY APP', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40))
+                  child: Text('7GYM APP', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40))
               ),
               Container(
                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
@@ -52,9 +64,8 @@ class _WelcomeState extends State<Welcome> {
                 child: SizedBox(
                   width: 200,
                   child: TextField(
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
+                    controller: _nameController,
+                    style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Colors.white.withOpacity(0.1),
@@ -75,28 +86,18 @@ class _WelcomeState extends State<Welcome> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
+                padding: const EdgeInsets.fromLTRB(0, 60, 0, 0),
                 child: RaisedButton(
                   color: Colors.red,
                   child: Text('Submit'),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
                   textColor: Colors.white,
-                  onPressed: () {
-                    setState(() {
-                      value = _textController.text;
-                    });
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) =>  Second(value: _textController.text)
-                      ),
-                    );
-                  },
+                  onPressed: navigateToSecond,
                 ),
               ),
             ],
-            ),
+          ),
         ),
-         ],
       ),
     );
   }

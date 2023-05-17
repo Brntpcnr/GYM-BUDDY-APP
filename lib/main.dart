@@ -38,14 +38,14 @@ class _FirstRouteState extends State<FirstRoute> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.red[600],
         title: Center(
             child:  Padding(
               padding: const EdgeInsets.fromLTRB(0, 0, 50, 0),
               child: Text(
-          'Workouts',
+          'MUSCLE GROUPS',
           style: TextStyle(color: Colors.white),
         ),
             )),
@@ -57,7 +57,7 @@ class _FirstRouteState extends State<FirstRoute> {
               height: 10,
             ),
             FlatButton(
-              splashColor: Colors.transparent,
+              splashColor: Colors.red,
               highlightColor: Colors.transparent,
               onPressed: () {
                 Navigator.push(
@@ -75,11 +75,11 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Chest1.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.blue, width: 5),
+                        border: Border.all(color: Colors.transparent, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
-                    color: Colors.blue,
+                    color: Colors.transparent,
                     height: 150,
                     width: 210,
                     child: Padding(
@@ -96,7 +96,7 @@ class _FirstRouteState extends State<FirstRoute> {
             ),
             //for backworkout
             FlatButton(
-              splashColor: Colors.transparent,
+              splashColor: Colors.red,
               highlightColor: Colors.transparent,
               onPressed: () {
                 Navigator.push(
@@ -115,11 +115,11 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Biceps.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.blue, width: 5),
+                        border: Border.all(color: Colors.transparent, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
-                    color: Colors.blue,
+                    color: Colors.transparent,
                     height: 150,
                     width: 210,
                     child: Padding(
@@ -135,7 +135,7 @@ class _FirstRouteState extends State<FirstRoute> {
               height: 10,
             ),
             FlatButton(
-              splashColor: Colors.transparent,
+              splashColor: Colors.red,
               highlightColor: Colors.transparent,
               onPressed: () {
                 Navigator.push(
@@ -155,11 +155,11 @@ class _FirstRouteState extends State<FirstRoute> {
                             image:
                                 AssetImage('assets/chestimages/Forearms.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.blue, width: 5),
+                        border: Border.all(color: Colors.transparent, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
-                    color: Colors.blue,
+                    color: Colors.transparent,
                     height: 150,
                     width: 210,
                     child: Padding(
@@ -175,7 +175,7 @@ class _FirstRouteState extends State<FirstRoute> {
               height: 10,
             ),
             FlatButton(
-              splashColor: Colors.transparent,
+              splashColor: Colors.red,
               highlightColor: Colors.transparent,
               onPressed: () {
                 Navigator.push(
@@ -194,11 +194,11 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Triceps.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.blue, width: 5),
+                        border: Border.all(color: Colors.transparent, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
-                    color: Colors.blue,
+                    color: Colors.transparent,
                     height: 150,
                     width: 210,
                     child: Padding(
@@ -215,7 +215,7 @@ class _FirstRouteState extends State<FirstRoute> {
               height: 10,
             ),
             FlatButton(
-              splashColor: Colors.transparent,
+              splashColor: Colors.red,
               highlightColor: Colors.transparent,
               onPressed: () {
                 Navigator.push(
@@ -235,11 +235,11 @@ class _FirstRouteState extends State<FirstRoute> {
                             image:
                                 AssetImage('assets/chestimages/Shoulders.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.blue, width: 5),
-                        borderRadius: BorderRadius.circular(40)),
+                        border: Border.all(color: Colors.transparent, width: 5),
+                        borderRadius: BorderRadius.circular(50)),
                   ),
                   Container(
-                    color: Colors.blue,
+                    color: Colors.transparent,
                     height: 150,
                     width: 210,
                     child: Padding(
@@ -255,7 +255,7 @@ class _FirstRouteState extends State<FirstRoute> {
               height: 10,
             ),
             FlatButton(
-              splashColor: Colors.transparent,
+              splashColor: Colors.red,
               highlightColor: Colors.transparent,
               onPressed: () {
                 Navigator.push(
@@ -274,11 +274,11 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Back.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.blue, width: 5),
-                        borderRadius: BorderRadius.circular(40)),
+                        border: Border.all(color: Colors.transparent, width: 5),
+                        borderRadius: BorderRadius.circular(50)),
                   ),
                   Container(
-                    color: Colors.blue,
+                    color: Colors.transparent,
                     height: 150,
                     width: 210,
                     child: Padding(
@@ -294,7 +294,7 @@ class _FirstRouteState extends State<FirstRoute> {
               height: 10,
             ),
             FlatButton(
-              splashColor: Colors.transparent,
+              splashColor: Colors.red,
               highlightColor: Colors.transparent,
               onPressed: () {
                 Navigator.push(
@@ -313,11 +313,11 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Abs.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.blue, width: 5),
+                        border: Border.all(color: Colors.transparent, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
-                    color: Colors.blue,
+                    color: Colors.transparent,
                     height: 150,
                     width: 210,
                     child: Padding(
@@ -333,7 +333,7 @@ class _FirstRouteState extends State<FirstRoute> {
               height: 10,
             ),
             FlatButton(
-              splashColor: Colors.transparent,
+              splashColor: Colors.red,
               highlightColor: Colors.transparent,
               onPressed: () {
                 Navigator.push(
@@ -353,11 +353,11 @@ class _FirstRouteState extends State<FirstRoute> {
                             image:
                                 AssetImage('assets/chestimages/UpperLeg.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.blue, width: 5),
+                        border: Border.all(color: Colors.transparent, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
-                    color: Colors.blue,
+                    color: Colors.transparent,
                     height: 150,
                     width: 230,
                     child: Padding(
@@ -373,7 +373,7 @@ class _FirstRouteState extends State<FirstRoute> {
               height: 10,
             ),
             FlatButton(
-              splashColor: Colors.transparent,
+              splashColor: Colors.red,
               highlightColor: Colors.transparent,
               onPressed: () {
                 Navigator.push(
@@ -391,11 +391,11 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Glutes.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.blue, width: 5),
-                        borderRadius: BorderRadius.circular(40)),
+                        border: Border.all(color: Colors.transparent, width: 5),
+                        borderRadius: BorderRadius.circular(50)),
                   ),
                   Container(
-                    color: Colors.blue,
+                    color: Colors.transparent,
                     height: 150,
                     width: 210,
                     child: Padding(
@@ -411,7 +411,7 @@ class _FirstRouteState extends State<FirstRoute> {
               height: 10,
             ),
             FlatButton(
-              splashColor: Colors.transparent,
+              splashColor: Colors.red,
               highlightColor: Colors.transparent,
               onPressed: () {
                 Navigator.push(
@@ -429,11 +429,11 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Calves.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.blue, width: 5),
+                        border: Border.all(color: Colors.transparent, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
-                    color: Colors.blue,
+                    color: Colors.transparent,
                     height: 150,
                     width: 210,
                     child: Padding(
