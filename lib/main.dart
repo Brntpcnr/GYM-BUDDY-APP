@@ -12,8 +12,8 @@ import 'tricepsWorkout.dart';
 import 'secondd.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    title: 'Navigation Basics',
+  runApp(MaterialApp(
+    theme: ThemeData(highlightColor: Colors.red),
     home: FirstRoute(),
   ));
 }
@@ -75,7 +75,7 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Chest1.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.transparent, width: 5),
+                        border: Border.all(color: Colors.red, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
@@ -115,7 +115,7 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Biceps.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.transparent, width: 5),
+                        border: Border.all(color: Colors.red, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
@@ -155,7 +155,7 @@ class _FirstRouteState extends State<FirstRoute> {
                             image:
                                 AssetImage('assets/chestimages/Forearms.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.transparent, width: 5),
+                        border: Border.all(color: Colors.red, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
@@ -194,7 +194,7 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Triceps.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.transparent, width: 5),
+                        border: Border.all(color: Colors.red, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
@@ -235,8 +235,8 @@ class _FirstRouteState extends State<FirstRoute> {
                             image:
                                 AssetImage('assets/chestimages/Shoulders.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.transparent, width: 5),
-                        borderRadius: BorderRadius.circular(50)),
+                        border: Border.all(color: Colors.red, width: 5),
+                        borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.transparent,
@@ -267,15 +267,15 @@ class _FirstRouteState extends State<FirstRoute> {
               child: Row(
                 children: [
                   Container(
-                    height: 150,
+                    height: 148,
                     width: 100,
                     margin: const EdgeInsets.fromLTRB(10, 5, 0, 0),
                     decoration: BoxDecoration(
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Back.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.transparent, width: 5),
-                        borderRadius: BorderRadius.circular(50)),
+                        border: Border.all(color: Colors.red, width: 5),
+                        borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.transparent,
@@ -313,7 +313,7 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Abs.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.transparent, width: 5),
+                        border: Border.all(color: Colors.red, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
@@ -353,7 +353,7 @@ class _FirstRouteState extends State<FirstRoute> {
                             image:
                                 AssetImage('assets/chestimages/UpperLeg.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.transparent, width: 5),
+                        border: Border.all(color: Colors.red, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
@@ -391,8 +391,8 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Glutes.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.transparent, width: 5),
-                        borderRadius: BorderRadius.circular(50)),
+                        border: Border.all(color: Colors.red, width: 5),
+                        borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
                     color: Colors.transparent,
@@ -429,7 +429,7 @@ class _FirstRouteState extends State<FirstRoute> {
                         image: const DecorationImage(
                             image: AssetImage('assets/chestimages/Calves.jpg'),
                             fit: BoxFit.contain),
-                        border: Border.all(color: Colors.transparent, width: 5),
+                        border: Border.all(color: Colors.red, width: 5),
                         borderRadius: BorderRadius.circular(40)),
                   ),
                   Container(
