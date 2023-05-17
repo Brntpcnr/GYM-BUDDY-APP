@@ -13,7 +13,6 @@ import 'secondd.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData(highlightColor: Colors.red),
     home: FirstRoute(),
   ));
 }
@@ -26,6 +25,7 @@ BoxDecoration imgName(String imgname) {
 }
 
 class FirstRoute extends StatefulWidget {
+
   const FirstRoute({Key? key}) : super(key: key);
 
   //final String? muscleGroup;
