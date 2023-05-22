@@ -3,7 +3,7 @@ import 'Progress.dart';
 
 Container workoutNames(String name) {
   return Container(
-    color: Colors.blue[300],
+    color: Colors.red,
     width: 300,
     child: Text(
       "$name",
@@ -25,9 +25,9 @@ class _tricepsWorkoutState extends State<tricepsWorkout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.blue[100],
+        backgroundColor: Colors.black,
         appBar: AppBar(
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.red,
           title: Center(child: Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 50, 0),
             child: const Text('Triceps Workout'),
