@@ -45,8 +45,9 @@ class _ProgressState extends State<Progress> {
     //return MaterialApp(
       return Scaffold(
         resizeToAvoidBottomInset: false,
-        backgroundColor: Colors.blue[100],
+        backgroundColor: Colors.grey,
         appBar: AppBar(
+          backgroundColor: Colors.red,
           title: Center(
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(0, 0, 50, 0),
@@ -109,7 +110,9 @@ class _ProgressState extends State<Progress> {
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 250, 0, 0),
-                child: ElevatedButton(
+                child: RaisedButton(
+                  color: Colors.red,
+                  textColor: Colors.white,
                   child: const Text('Submit'),
                   onPressed: () {
                     setState(() {
