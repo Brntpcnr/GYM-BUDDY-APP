@@ -3,7 +3,8 @@ import 'package:secondpage/secondd.dart';
 import 'main.dart';
 
 void main(){
-  runApp(const MaterialApp(
+  runApp( MaterialApp(
+    theme: ThemeData(splashColor: Colors.red),
     title: 'Welcoming Page',
     home: Welcome(),
   ));

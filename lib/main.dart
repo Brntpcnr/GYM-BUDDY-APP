@@ -13,6 +13,9 @@ import 'secondd.dart';
 
 void main() {
   runApp(MaterialApp(
+    theme: ThemeData(
+      splashColor: Colors.red
+    ),
     home: FirstRoute(),
   ));
 }
