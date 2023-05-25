@@ -98,9 +98,9 @@ class PreviousState extends State<Previous> {
     return Scaffold(
       key: ExercisesListKey,
       resizeToAvoidBottomInset: true,
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.red,
         title: Center(
             child: Padding(
               padding: EdgeInsets.fromLTRB(0, 0, 50, 0),

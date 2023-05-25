@@ -8,7 +8,7 @@ Container workoutNames(String name) {
     child: Text(
       "$name",
       textAlign: TextAlign.center,
-      style: TextStyle(fontSize: 16),
+      style: TextStyle(fontSize: 16, color: Colors.white),
     ),
   );
 }

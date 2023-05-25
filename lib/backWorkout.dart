@@ -2,6 +2,19 @@ import 'package:flutter/material.dart';
 import 'chestWorkout.dart';
 import 'Progress.dart';
 
+
+Container workoutNames(String name) {
+  return Container(
+    color: Colors.red,
+    width: 300,
+    child: Text(
+      "$name",
+      textAlign: TextAlign.center,
+      style: TextStyle(fontSize: 16, color: Colors.white),
+    ),
+  );
+}
+
 class backWorkout extends StatefulWidget {
   final String? muscleGroup;
   const backWorkout({Key? key, this.muscleGroup}) : super(key: key);
@@ -14,9 +27,9 @@ class _backWorkoutState extends State<backWorkout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.blue[100],
+        backgroundColor: Colors.black,
         appBar: AppBar(
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.red,
           title: Center(child: Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 50, 0),
             child: const Text('Back Workout'),

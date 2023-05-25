@@ -9,7 +9,7 @@ Container ProgressOverlay(String boxtext) {
   return Container(
     height: 50,
     width: 180,
-    decoration: BoxDecoration(border: Border.all(), color: Colors.white),
+    decoration: BoxDecoration(border: Border.all(), color: Colors.grey),
     child: Center(
       child: Text(
         '$boxtext',
@@ -29,6 +29,7 @@ class Progress extends StatefulWidget {
 }
 
 class _ProgressState extends State<Progress> {
+
   final String? muscleGroup;
   final String? excerciseName;
   _ProgressState({Key? key, this.muscleGroup, this.excerciseName});
@@ -45,7 +46,7 @@ class _ProgressState extends State<Progress> {
     //return MaterialApp(
       return Scaffold(
         resizeToAvoidBottomInset: false,
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Colors.red,
           title: Center(
@@ -68,8 +69,9 @@ class _ProgressState extends State<Progress> {
               ),
               Row(
                 children: [
-                  SizedBox(
+                  Container(
                     width: 180,
+                    color: Colors.white,
                     child: TextField(
                     controller: _textController1,
                     decoration: InputDecoration(
@@ -78,9 +80,10 @@ class _ProgressState extends State<Progress> {
                     ),
                   ),
                 ),
-                  SizedBox(
+                  Container(
                   width: 180,
-                  child: TextField(
+                    color: Colors.white,
+                    child: TextField(
                     controller: _textController2,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
@@ -95,10 +98,14 @@ class _ProgressState extends State<Progress> {
               ),
               Row(
                 children: [ProgressOverlay('Date')],
+
               ),
               Row(
-                children: [SizedBox(width: 180,
-                  child: TextField(
+                children: [
+                  Container(
+                    width: 180,
+                    color: Colors.white,
+                    child: TextField(
                     controller: _textController3,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
