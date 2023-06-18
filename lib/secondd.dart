@@ -5,13 +5,6 @@ import 'welcome.dart';
 import 'previousworkouts.dart';
 
 
-void main(){
-  runApp(const MaterialApp(
-    title: 'Second Page',
-    home: const Second(name: ''),
-  ));
-}
-
 class Second extends StatefulWidget{
 
   final String name;

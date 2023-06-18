@@ -124,7 +124,7 @@ class _WelcomeState extends State<Welcome> {
           child: Column(
             children: [
               Container(
-                  padding: const EdgeInsets.fromLTRB(120, 80, 120.0, 50.0),
+                  padding: const EdgeInsets.fromLTRB(120, 60, 120.0, 50.0),
                   child: Text('Welcome to', style: TextStyle(color: Colors.white, fontSize: 20))
               ),
               Container(
@@ -132,44 +132,107 @@ class _WelcomeState extends State<Welcome> {
                   child: Text('7GYM APP', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40))
               ),
               Container(
-                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                  child: CircleAvatar(
-                      backgroundImage: AssetImage('assets/chestimages/200w.gif'),
-                      radius: 100,
-                  ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
-                child: SizedBox(
-                  width: 200,
-                  child: TextField(
-                    controller: _nameController,
-                    style: TextStyle(color: Colors.white),
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white.withOpacity(0.1),
-                      hintText: 'Enter text',
-                      hintStyle: TextStyle(
-                        color: Colors.white.withOpacity(0.5),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.white),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.white),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  )
+                padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                child: CircleAvatar(
+                  backgroundImage: AssetImage('assets/chestimages/200w.gif'),
+                  radius: 100,
                 ),
               ),
-              SizedBox(),
+              //username
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
+                child: SizedBox(
+                    width: 200,
+                    child: TextField(
+                      controller: _nameController,
+                      style: TextStyle(color: Colors.white),
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white.withOpacity(0.1),
+                        hintText: 'Enter text',
+                        hintStyle: TextStyle(
+                          color: Colors.white.withOpacity(0.5),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    )
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              //email/user textfield
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                child: SizedBox(
+                    width: 200,
+                    child: TextField(
+                      controller: emailOrUsernameController,
+                      style: TextStyle(color: Colors.white),
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white.withOpacity(0.1),
+                        hintText: 'Enter text',
+                        hintStyle: TextStyle(
+                          color: Colors.white.withOpacity(0.5),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    )
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              //password textfield
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                child: SizedBox(
+                    width: 200,
+                    child: TextField(
+                      controller: passwordController,
+                      style: TextStyle(color: Colors.white),
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white.withOpacity(0.1),
+                        hintText: 'Enter text',
+                        hintStyle: TextStyle(
+                          color: Colors.white.withOpacity(0.5),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    )
+                ),
+              ),
+              SizedBox(
+                height: 5,
+              ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 60, 0, 0),
                 child: RaisedButton(
                   color: Colors.red,
-                  child: Text('Submit'),
+                  child: Text('Register'),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
                   textColor: Colors.white,
                   onPressed: navigateToSecond,

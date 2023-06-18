@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "676213170011",
-    "project_id": "gym-buddy-app-5dc9a",
-    "storage_bucket": "gym-buddy-app-5dc9a.appspot.com"
+    "project_number": "30455645725",
+    "project_id": "gym-buddy-app-1822a",
+    "storage_bucket": "gym-buddy-app-1822a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:676213170011:android:c91cb3bfd5ec79ddd5047e",
+        "mobilesdk_app_id": "1:30455645725:android:8797403b65e2dd71d7a8f4",
         "android_client_info": {
           "package_name": "com.example.secondpage"
         }
       },
       "oauth_client": [
         {
-          "client_id": "676213170011-egapb57dmnsnsdkv4ia42dee6agsblt0.apps.googleusercontent.com",
+          "client_id": "30455645725-h33e8pj92lf3sqq8580npsjh1dggred8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBiJb-FxDPosR8V7tyCXB-xP3CZaPUzilI"
+          "current_key": "AIzaSyAe9UV7Qwfk2jvxtYm-C9BTvJS4ved2j1E"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "676213170011-egapb57dmnsnsdkv4ia42dee6agsblt0.apps.googleusercontent.com",
+              "client_id": "30455645725-h33e8pj92lf3sqq8580npsjh1dggred8.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "30455645725-fbqmve9h49unndaivqra85lgtvlc4vj1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.secondpage"
+              }
             }
           ]
         }

@@ -30,8 +30,8 @@ class Progress extends StatefulWidget {
 
 class _ProgressState extends State<Progress> {
 
-  final String? muscleGroup;
-  final String? excerciseName;
+  late final String? muscleGroup;
+  late final String? excerciseName;
   _ProgressState({Key? key, this.muscleGroup, this.excerciseName});
   final _textController1 = TextEditingController();
   final _textController2 = TextEditingController();
@@ -120,22 +120,25 @@ class _ProgressState extends State<Progress> {
                 child: RaisedButton(
                   color: Colors.red,
                   textColor: Colors.white,
-                  child: const Text('Submit'),
+                  child: Text('Submit'),
                   onPressed: () {
                     setState(() {
-                      value1 = _textController1.text;
-                      value2 = _textController2.text;
-                      value3 = _textController3.text;
-                      CreateExercise(value1,value2,value3,excerciseName,muscleGroup);
+                      value1 = this._textController1.text;
+                      value2 = this._textController2.text;
+                      value3 = this._textController3.text;
+                      muscleGroup = this.muscleGroup;
+                      excerciseName = this.excerciseName;
                     });
-                    Navigator.push(context, MaterialPageRoute(builder: (context)  {return Previous();}),);
-                    },
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) =>   Previous(muscleGroup: this.muscleGroup, exerciseName: this.excerciseName, value1: this._textController1.text, value2: this._textController2.text, value3: this._textController3.text))
+                    );
+                  },
                 ),
               ),
             ],
           ),
         ),
       );
-    //);
   }
 }

@@ -10,6 +10,7 @@ import 'quadricepsWorkout.dart';
 import 'shoulderWorkout.dart';
 import 'tricepsWorkout.dart';
 import 'secondd.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 void main() {
   runApp(MaterialApp(
