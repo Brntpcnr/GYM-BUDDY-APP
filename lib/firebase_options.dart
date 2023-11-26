@@ -50,19 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAe9UV7Qwfk2jvxtYm-C9BTvJS4ved2j1E',
+    apiKey: '',
     appId: '1:30455645725:android:8797403b65e2dd71d7a8f4',
     messagingSenderId: '30455645725',
-    projectId: 'gym-buddy-app-1822a',
-    storageBucket: 'gym-buddy-app-1822a.appspot.com',
+    projectId: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyASHiB3M5ybWPj--DUPGBxejcWrXzEtp_c',
-    appId: '1:30455645725:ios:86c4262c1dd6e992d7a8f4',
+    apiKey: '',
+    appId: '',
     messagingSenderId: '30455645725',
-    projectId: 'gym-buddy-app-1822a',
-    storageBucket: 'gym-buddy-app-1822a.appspot.com',
+    projectId: '',
+    storageBucket: '',
     iosClientId: '30455645725-fbqmve9h49unndaivqra85lgtvlc4vj1.apps.googleusercontent.com',
     iosBundleId: 'com.example.secondpage',
   );
